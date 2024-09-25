@@ -61,7 +61,7 @@ By default, debug is on. Errors will be logged to console, and appear in the doc
 ### Examples
 Below are some webpages using js-templaterenderer:
 
-1. [LeachUK](https://tbwcjw.github.io/LeachUKsite/) - [Repository](https://github.com/tbwcjw/LeachUKsite).
+1. [LeachUK](https://tbwcjw.github.io/LeachUKsite/) - A simple linktree-alike. [Repository](https://github.com/tbwcjw/LeachUKsite).
 ### Contributing
 Contributions are welcome. Submit a pull request or open an issue for any bugs or feature issues.
 
