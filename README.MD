@@ -27,6 +27,7 @@ It should be pretty simple to include your own placeholder regexes. Just add the
 ##### Installation:
 
 From Clone: ``` git clone https://github.com/tbwcjw/js-templaterenderer.git ```
+
 From Template: This repository can be [used as a template](https://github.com/new?template_name=js-templaterenderer).
 ##### Sample Directory Structure:
 ```
