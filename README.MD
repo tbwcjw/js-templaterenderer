@@ -58,6 +58,10 @@ Replace 'path_to_template' with the path to your HTML template files
 3. ```const debug = true;```
 By default, debug is on. Errors will be logged to console, and appear in the document innerHTML. Do not keep this on in production.
 
+### Examples
+Below are some webpages using js-templaterenderer:
+
+1. [LeachUK](https://tbwcjw.github.io/LeachUKsite/) - [Repository](https://github.com/tbwcjw/LeachUKsite).
 ### Contributing
 Contributions are welcome. Submit a pull request or open an issue for any bugs or feature issues.
 
