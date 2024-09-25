@@ -92,7 +92,16 @@ async function renderPage(page, pageData) {
 
         rendered = replacePlaceholders(rendered, pageData[page]);
 
-        document.body.innerHTML = rendered;
+        const headContent = rendered.match(/<head[^>]*>([\s\S]*?)<\/head>/i);
+        const bodyContent = rendered.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+
+        if (headContent) {
+            document.head.innerHTML = headContent[1];
+        }
+        if (bodyContent) {
+            document.body.innerHTML = bodyContent[1];
+        } 
+        
     } catch (error) {
         doError(error)
     }

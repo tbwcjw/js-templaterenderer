@@ -28,6 +28,7 @@ It should be pretty simple to include your own placeholder regexes. Just add the
 
 From Clone: ``` git clone https://github.com/tbwcjw/js-templaterenderer.git ```
 From Template: This repository can be [used as a template](https://github.com/new?template_name=js-templaterenderer).
+
 ##### Sample Directory Structure:
 ```
 /project-root
@@ -49,7 +50,7 @@ For local development, due to CORS, use pythons built in http server.
 
 Edit the top three lines of ```app.js```:
 
-1. ```const pageDataPath = 'pagedata.json' ```
+1. ```const pageDataPath = 'pagedata.json'```
 Replace 'pagedata.json' with the path to your page data JSON file.
 
 2. ```const getTemplatePath = (template) => `templates/${template}.html`;```
@@ -58,10 +59,19 @@ Replace 'templates/' with the path to your HTML template files
 3. ```const debug = true;```
 By default, debug is on. Errors will be logged to console, and appear in the document innerHTML. Do not keep this on in production.
 
+### Quirks Mode
+To avoid Quirks Mode. Add a ```DOCTYPE``` and ```head``` opening tag in ```index.html``` (project root).
+```
+<!DOCTYPE html>
+<head>
+<script src="src/app.js"></script>
+```
+All other ```<head>``` elements in the appropriate template files will be retrieved appropriately.
 ### Examples
 Below are some webpages using js-templaterenderer:
 
 1. [LeachUK](https://tbwcjw.github.io/LeachUKsite/) - A simple linktree-alike. [repo](https://github.com/tbwcjw/LeachUKsite)
+
 ### Contributing
 Contributions are welcome. Submit a pull request or open an issue for any bugs or feature issues.
 
