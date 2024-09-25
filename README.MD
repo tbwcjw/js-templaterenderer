@@ -4,6 +4,9 @@ Simple JS based single-page application renderer. Dynamically loads contents and
 
 #### Things to note
 
+1. This is early development. I have a lot of ideas for this, but it will take time. I suck at updating readme's and I'm bad at explaining things. If you want to help, submit a pull request.
+2. This was not designed for managing, storing or retrieving user data. Storing private data in a JSON would be bad don't do that.
+
 #### Syntax
 | Syntax | Regex | Description |
 | ------ | ----- | ----------- |
