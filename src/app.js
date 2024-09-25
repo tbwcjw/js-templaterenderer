@@ -1,5 +1,5 @@
-const pageDataPath = 'path_to_json'
-const getTemplatePath = (template) => `path_to_template/${template}.html`;
+const pageDataPath = 'pagedata.json'
+const getTemplatePath = (template) => `templates/${template}.html`;
 const debug = true;
 
 function fetchPageData() {

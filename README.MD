@@ -26,8 +26,8 @@ It should be pretty simple to include your own placeholder regexes. Just add the
 
 ##### Installation:
 
-``` git clone https://github.com/tbwcjw/js-templaterenderer.git ```
-
+From Clone: ``` git clone https://github.com/tbwcjw/js-templaterenderer.git ```
+From Template: This repository can be [used as a template](https://github.com/new?template_name=js-templaterenderer).
 ##### Sample Directory Structure:
 ```
 /project-root
@@ -49,11 +49,11 @@ For local development, due to CORS, use pythons built in http server.
 
 Edit the top three lines of ```app.js```:
 
-1. ```const pageDataPath = 'path_to_json' ```
-Replace with path to your page data JSON file.
+1. ```const pageDataPath = 'pagedata.json' ```
+Replace 'pagedata.json' with the path to your page data JSON file.
 
-2. ```const getTemplatePath = (template) => `path_to_template/${template}.html`;```
-Replace 'path_to_template' with the path to your HTML template files
+2. ```const getTemplatePath = (template) => `templates/${template}.html`;```
+Replace 'templates/' with the path to your HTML template files
 
 3. ```const debug = true;```
 By default, debug is on. Errors will be logged to console, and appear in the document innerHTML. Do not keep this on in production.
