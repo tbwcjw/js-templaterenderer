@@ -49,7 +49,7 @@ From Template: This repository can be [used as a template](https://github.com/ne
 For local development, due to CORS, use pythons built in http server.
 ```python -m http.server 8000```
 
-Edit the top three lines of ```app.js```:
+Edit the top four lines of ```app.js```:
 
 1. ```const pageDataPath = 'pagedata.json'```
 Replace 'pagedata.json' with the path to your page data JSON file.
@@ -59,6 +59,9 @@ Replace 'templates/' with the path to your HTML template files
 
 3. ```const debug = true;```
 By default, debug is on. Errors will be logged to console, and appear in the document innerHTML. Do not keep this on in production.
+
+4. ```const homeTemplate = 'home';```
+The name of the template used on your landing page. Ensure this page exists in ```templates/```.
 
 ### Quirks Mode
 To avoid Quirks Mode. Add a ```DOCTYPE``` and ```head``` opening tag in ```index.html``` (project root).
